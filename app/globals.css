@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base */
+  --color-background: #f5f4ef;
+  --color-foreground: #0f0f0d;
+  --color-background-light: #f6f5f1;
+
+  /* Brand */
+  --color-primary: #16253c;
+  --color-secondary: #351539;
+  --color-accent: #bc934e;
+
+  /* States */
+  --color-primary-hover: #1e3556;
+  --color-secondary-hover: #4a1c4f;
+
+  /* Neutrals */
+  --color-muted: #d9d6cf;
+  --color-border: #e8e6df;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Colors */
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-background-light: var(--color-background-light);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-secondary-hover: var(--color-secondary-hover);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --radius-s: 4px;    /* Sutil: botões pequenos, inputs */
+  --radius-m: 12px;   /* Padrão: cards, modais internos */
+  --radius-lg: 24px;  /* Amplo: seções, containers grandes */
+
+  /* Border Width (Espessura da Borda) */
+  --border-width-s: 1px;  /* Delicada: divisores, cards luxo */
+  --border-width-m: 2px;  /* Definida: foco, botões primários */
+  --border-width-lg: 4px; /* Ênfase: destaque de elementos */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-foreground font-sans;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+}
+
+.glass-light {
+  @apply backdrop-blur-lg bg-white/[0.08] border border-white/15;
+}
+
+.glass-dark {
+  @apply backdrop-blur-lg bg-black/[0.12] border border-white/10;
+}
+
+/* Smooth scrolling */
+html {
+  @apply scroll-smooth;
+}
+
+/* Premium animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
 }

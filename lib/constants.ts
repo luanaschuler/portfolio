@@ -1,0 +1,271 @@
+import { image } from "framer-motion/client";
+
+// Site Metadata
+export const SITE_TITLE = "Luana Schüler - Web Developer";
+export const SITE_DESCRIPTION =
+  "Desenvolvimento de websites modernos e funcionais";
+export const SITE_KEYWORDS =
+  "design, development, portfolio, UI/UX, web design";
+
+// Navigation
+export const NAV_ITEMS = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "Process", href: "#process" },
+  { label: "FAQ", href: "#faq" },
+];
+
+// Hero Section
+export const HERO = {
+  headline: "Web design que conecta e transforma.",
+  subheadline:
+    "Criação de sites modernos, estratégicos e funcionais que impulsionam marcas e geram resultados reais.",
+  cta_primary: "Acesse o PORTFOLIO",
+  cta_secondary: "Entre em contato",
+};
+
+// About Section
+export const ABOUT = {
+  title: "About Me",
+  description:
+    "I'm a product designer and developer with a passion for creating beautiful, functional digital experiences. With 8+ years of experience, I've helped brands elevate their digital presence through thoughtful design and robust development.",
+  highlights: [
+    "50+ Projects Completed",
+    "20+ Global Clients",
+    "8+ Years Experience",
+    "Award-Winning Work",
+  ],
+};
+
+// Services Section
+export const SERVICES = [
+  {
+    id: 1,
+    title: "Product Design",
+    description:
+      "End-to-end design solutions from concept to pixel-perfect mockups",
+    icon: "🎨",
+    image: "/fios.png",
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    description: "Modern, responsive websites built with latest technologies",
+    icon: "💻",
+    image: "/folha.png",
+  },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    description: "User-centered design that drives engagement and conversions",
+    icon: "✨",
+    image: "/geom.png",
+  },
+  {
+    id: 4,
+    title: "Brand Identity",
+    description: "Complete branding packages tailored to your vision",
+    icon: "🎯",
+    image: "/folha.png",
+  },
+  {
+    id: 5,
+    title: "Mobile Apps",
+    description: "Native and cross-platform app design and development",
+    icon: "📱",
+    image: "/mountain.png",
+  },
+  {
+    id: 6,
+    title: "Consulting",
+    description: "Strategic digital transformation and growth consulting",
+    icon: "💡",
+    image: "/muitosfios.png",
+  },
+];
+
+// Portfolio Section
+export const PORTFOLIO = {
+  title: "Featured Work",
+  description: "A selection of projects that showcase my expertise and passion",
+  projects: [
+    {
+      id: 1,
+      title: "E-Commerce Platform Redesign",
+      description:
+        "Complete redesign of a leading e-commerce platform, resulting in 45% increase in conversion rates",
+      image: "/placeholder-1.jpg",
+      category: "E-Commerce",
+      link: "#",
+    },
+    {
+      id: 2,
+      title: "Fintech Dashboard Application",
+      description:
+        "Designed and developed a comprehensive financial analytics dashboard for enterprise clients",
+      image: "/placeholder-2.jpg",
+      category: "Fintech",
+      link: "#",
+    },
+    {
+      id: 3,
+      title: "SaaS Product Platform",
+      description:
+        "Built a scalable SaaS platform from ground up with modern design principles",
+      image: "/placeholder-3.jpg",
+      category: "SaaS",
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "Mobile Health App",
+      description:
+        "Created an intuitive mobile health application used by 100k+ users",
+      image: "/placeholder-4.jpg",
+      category: "Mobile",
+      link: "#",
+    },
+  ],
+};
+
+// Testimonials Section
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: "Sarah Anderson",
+    title: "CEO at TechVenture",
+    quote:
+      "Luana's work transformed our digital presence. Her attention to detail and creative excellence is unmatched.",
+    image: "/testimonial-1.jpg",
+  },
+  {
+    id: 2,
+    name: "Marcus Chen",
+    title: "Founder at InnovateCo",
+    quote:
+      "Working with Luana was seamless. She delivered a product that exceeded our expectations and our users love it.",
+    image: "/testimonial-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Emma Wilson",
+    title: "Product Manager at CreativeStudio",
+    quote:
+      "Luana brings both artistry and technical excellence. A true professional that I'd recommend to anyone.",
+    image: "/testimonial-3.jpg",
+  },
+];
+
+// Process Section
+export const PROCESS = [
+  {
+    id: 1,
+    title: "Discovery & Strategy",
+    description:
+      "Understanding your vision, goals, and target audience through in-depth consultation",
+    icon: "🔍",
+  },
+  {
+    id: 2,
+    title: "Design & Prototyping",
+    description:
+      "Creating detailed wireframes, mockups, and interactive prototypes",
+    icon: "✏️",
+  },
+  {
+    id: 3,
+    title: "Development & Testing",
+    description:
+      "Building production-ready code and rigorous quality assurance",
+    icon: "⚙️",
+  },
+  {
+    id: 4,
+    title: "Launch & Support",
+    description:
+      "Deployment, optimization, and ongoing support for your success",
+    icon: "🚀",
+  },
+];
+
+// FAQ Section
+export const FAQ = [
+  {
+    id: 1,
+    question: "What is your typical project timeline?",
+    answer:
+      "Project timelines vary depending on scope and complexity. Most projects range from 4-12 weeks. During our initial consultation, I'll provide a detailed timeline for your specific needs.",
+  },
+  {
+    id: 2,
+    question: "Do you offer ongoing support after launch?",
+    answer:
+      "Yes! I offer comprehensive post-launch support packages including maintenance, updates, and optimization. We can discuss options that fit your budget.",
+  },
+  {
+    id: 3,
+    question: "What is your design process?",
+    answer:
+      "My process includes discovery, strategy, design, prototyping, development, testing, and launch. I emphasize collaboration and feedback throughout each phase.",
+  },
+  {
+    id: 4,
+    question: "Can you work with my existing design system?",
+    answer:
+      "Absolutely! I can integrate with existing design systems and development workflows to ensure consistency and efficiency.",
+  },
+  {
+    id: 5,
+    question: "What technologies do you specialize in?",
+    answer:
+      "I specialize in modern web technologies including React, Next.js, TypeScript, TailwindCSS, and various backend solutions. I'm always learning new tools.",
+  },
+  {
+    id: 6,
+    question: "How do you handle revisions?",
+    answer:
+      "All project packages include a set number of revision rounds. Additional revisions can be added based on your needs.",
+  },
+];
+
+// CTA Section
+export const CTA = {
+  headline: "Ready to Transform Your Digital Presence?",
+  description:
+    "Let's create something amazing together. Get in touch today and let's discuss your project.",
+  button: "Start Your Project",
+};
+
+// Contact Section
+export const CONTACT = {
+  title: "Entre em contato!",
+  description: "Tem um projeto em mente? Vamos conversar sobre ele! ",
+  whatsapp_number: "5547997411988", // Format: country code + number without +
+  email: "luanaschuler@gmail.com",
+  phone: "+55 (47) 99741-1988",
+};
+
+// Footer
+export const FOOTER = {
+  copyright: `© 2026 Luana Schüler. All rights reserved.`,
+  links: [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" },
+    { label: "Sitemap", href: "#" },
+  ],
+  social: [
+    { label: "LinkedIn", href: "#", icon: "👔" },
+    { label: "Instagram", href: "#", icon: "📸" },
+    { label: "GitHub", href: "#", icon: "💻" },
+  ],
+};
+
+// WhatsApp Configuration
+export const WHATSAPP_CONFIG = {
+  number: "5547997411988",
+  message: "Oi Luana. Gostaria de discutir um projeto com você.",
+  link: `https://wa.me/5547997411988?text=${encodeURIComponent("Oi Luana. Gostaria de discutir um projeto com você.")}`,
+};
