@@ -94,29 +94,29 @@ export const PORTFOLIO = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform Redesign",
+      title: "Website para Psicologa",
       description:
-        "Complete redesign of a leading e-commerce platform, resulting in 45% increase in conversion rates",
-      image: "/placeholder-1.jpg",
-      category: "E-Commerce",
+        "Redesign completo de uma plataforma de serviços de saúde, resultando em aumento de 45% nas taxas de conversão",
+      image: "/iniciais-bg.png",
+      category: "Saúde e Bem-estar",
       link: "#",
     },
     {
       id: 2,
-      title: "Fintech Dashboard Application",
+      title: "Website para Psicologo",
       description:
-        "Designed and developed a comprehensive financial analytics dashboard for enterprise clients",
-      image: "/placeholder-2.jpg",
-      category: "Fintech",
+        "Redesign completo de uma plataforma de serviços de saúde, resultando em aumento de 45% nas taxas de conversão",
+      image: "/folha.png",
+      category: "Saúde e Bem-estar",
       link: "#",
     },
     {
       id: 3,
-      title: "SaaS Product Platform",
+      title: "Portfólio para Midia Social",
       description:
-        "Built a scalable SaaS platform from ground up with modern design principles",
-      image: "/placeholder-3.jpg",
-      category: "SaaS",
+        "Site focado na estética e no visual dos trabalhos realizados da social midia, com o objetivo de atrair clientes e mostrar os trabalhos realizados",
+      image: "/folha.png",
+      category: "Creative Portfolio",
       link: "#",
     },
     {
@@ -124,7 +124,7 @@ export const PORTFOLIO = {
       title: "Mobile Health App",
       description:
         "Created an intuitive mobile health application used by 100k+ users",
-      image: "/placeholder-4.jpg",
+      image: "/iniciais-bg.png",
       category: "Mobile",
       link: "#",
     },

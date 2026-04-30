@@ -27,7 +27,7 @@ export default function Portfolio() {
       id="portfolio"
       className="py-20 relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(135deg, rgba(22, 37, 60, 0.28) 0%, rgba(53, 21, 57, 0.22) 50%, rgba(188, 147, 78, 0.18) 100%), url('/bgmain.png')`,
+        backgroundImage: `linear-gradient(135deg, rgba(22, 37, 60, 0.28) 0%, rgba(53, 21, 57, 0.22) 50%, rgba(188, 147, 78, 0.18) 100%), url('/mamorizado.jpg')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center center",
@@ -71,52 +71,69 @@ export default function Portfolio() {
                 key={project.id}
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
-                className="group relative h-96 rounded-3xl overflow-hidden transition-all duration-700"
+                className="group relative h-[500px] rounded-[40px] overflow-hidden transition-all duration-700 shadow-2xl shadow-black/5"
               >
-                {/* 1. FUNDO LÍQUIDO DINÂMICO (Muito sutil para não esconder o portfoliobg.png) */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/5 opacity-30 transition-all duration-1000 group-hover:scale-150 group-hover:opacity-60" />
+                {/* 1. FUNDO DO CARD: Textura de Vidro Líquido (Baseado no portfoliobg.png) */}
+                {/* Esta imagem cria a base visual iridescente do card */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                  style={{
+                    backgroundImage: `url('/watermarked_img_10031387561657356201.png')`,
+                  }}
+                />
 
-                {/* 2. O VIDRO CRISTALINO (Blur reduzido drasticamente para transparência) */}
-                {/* backdrop-blur-sm (4px) ou [8px] permite ver o fundo quase perfeitamente */}
-                <div className="absolute inset-0 backdrop-blur-[1.3px] backdrop-saturate-[1.4] bg-white/[0.005] transition-all duration-500 group-hover:bg-white/[0.04]" />
+                {/* 2. OVERLAY DE VIDRO CRISTALINO (Transparência com leve desfoque) */}
+                {/* Mantém o aspecto de vidro sem esconder a textura de fundo */}
+                <div className="absolute inset-0 backdrop-blur-[2px] bg-white/5 group-hover:bg-white/10 transition-colors duration-500" />
 
-                {/* 3. REFLEXO ESPECULAR (Essencial quando o blur é baixo) */}
-                {/* Isso cria a "cara" de vidro sem precisar de desfoque */}
-                <div className="absolute inset-0 bg-linear-to-tr from-white/10 via-white/[0.05] to-transparent opacity-40" />
+                {/* 3. MOLDURA INTERNA E ESPAÇO PARA A FOTO DO PROJETO */}
+                {/* Este elemento cria a "moldura" física onde a foto do projeto será inserida */}
+                <div className="absolute inset-8 rounded-2xl overflow-hidden border border-white/20 bg-black/5 shadow-inner z-20">
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                  {/* Adicione a tag <Image /> ou <img> aqui com project.image */}
+                  {/* <img src={project.image} alt={project.title} className="..." /> */}
 
-                {/* 4. BORDA DE LUZ (300% maior no hover para definir o limite) */}
-                <div className="absolute -inset-[1px] rounded-3xl border border-white/5 group-hover:border-white/20 group-hover:shadow-[0_0_60px_-10px_rgba(255,255,255,0.3)] transition-all duration-500 z-20" />
+                  {/* Reflexo Especular sobre a moldura da foto */}
+                  <div className="absolute inset-0 bg-linear-to-tr from-white/20 via-transparent to-transparent pointer-events-none" />
+                </div>
 
-                {/* 5. CONTEÚDO (Com sombra para legibilidade no vidro transparente) */}
-                <div className="relative z-30 h-full flex flex-col justify-between p-10">
-                  <div>
-                    <span className="inline-block px-3 py-1 bg-black/10 border border-white/20 rounded-full text-[10px] font-bold tracking-widest text-white backdrop-blur-md">
+                {/* 4. CONTEÚDO TEXTUAL (Sobreposto à moldura da foto na parte inferior) */}
+                {/* Gradiente sutil para garantir a legibilidade do texto branco */}
+                <div className="absolute inset-0 z-30 flex flex-col justify-end p-12 bg-linear-to-t from-black/60 via-transparent to-transparent">
+                  <div className="translate-y-8 group-hover:translate-y-0 transition-transform duration-500 space-y-3 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+                    {/* Categoria do Projeto */}
+                    <span className="text-[10px] font-bold tracking-[0.3em] text-white/80 uppercase">
                       {project.category}
                     </span>
-                  </div>
 
-                  <div className="space-y-3">
-                    <h3 className="text-4xl font-bold text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+                    {/* Título do Projeto */}
+                    <h3 className="text-3xl font-bold text-white leading-tight">
                       {project.title}
                     </h3>
-                    <p className="text-white/70 text-base leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-700 drop-shadow-md">
-                      {project.description}
-                    </p>
 
+                    {/* Descrição (Aparece no Hover) */}
+                    <motion.div className="h-0 overflow-hidden group-hover:h-auto transition-all duration-500">
+                      <p className="text-white/80 text-base font-light mb-4 leading-relaxed">
+                        {project.description}
+                      </p>
+                    </motion.div>
+
+                    {/* Link para o Projeto */}
                     <a
                       href={project.link}
-                      className="inline-flex items-center gap-2 pt-4 text-white font-bold group/link drop-shadow-md"
+                      className="inline-flex items-center gap-2 text-white font-semibold border-b border-white/40 pb-1 hover:border-white transition-colors"
                     >
-                      VIEW PROJECT
-                      <span className="group-hover:translate-x-2 transition-transform">
+                      ANALISAR CASE{" "}
+                      <span className="group-hover:translate-x-1 transition-transform">
                         →
                       </span>
                     </a>
                   </div>
                 </div>
 
-                {/* 6. BORDA INTERNA (Reflexo de quina) */}
-                <div className="absolute inset-0 rounded-3xl ring-[1px] ring-inset ring-white/20 pointer-events-none group-hover:ring-white/40" />
+                {/* 5. BORDA EXTERNA DE LUZ (Glow) */}
+                {/* Define o contorno do card e brilha no hover */}
+                <div className="absolute -inset-[1px] rounded-[40px] border border-white/20 group-hover:border-white/30 transition-colors duration-500 z-40 pointer-events-none" />
               </motion.div>
             ))}
           </motion.div>
@@ -129,7 +146,6 @@ export default function Portfolio() {
               href="/"
               className="group px-8 py-4 bg-primary text-white rounded-xl hover:bg-primary-hover transition-all duration-300 font-semibold flex items-center gap-3"
             >
-              Back to Home
               <span className="group-hover:translate-x-1 transition-transform">
                 ←
               </span>
