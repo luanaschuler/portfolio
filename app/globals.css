@@ -33,6 +33,10 @@
   --color-muted: var(--color-muted);
   --color-border: var(--color-border);
 
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
   --radius-s: 4px;    /* Sutil: botões pequenos, inputs */
   --radius-m: 12px;   /* Padrão: cards, modais internos */
   --radius-lg: 24px;  /* Amplo: seções, containers grandes */

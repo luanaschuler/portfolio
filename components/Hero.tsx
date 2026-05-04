@@ -42,25 +42,25 @@ export default function Hero() {
           <div className="space-y-6">
             <motion.h1
               variants={itemVariants}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground"
+              className="text-5xl md:text-6xl text-right lg:text-7xl font-bold font-serif leading-tight text-foreground"
             >
-              {HERO.headline}
+              {HERO.headline} <span className="text-accent italic">{HERO.part1}</span> <span>{HERO.part2}</span> <span className="text-accent italic">{HERO.part3}</span>
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
-              className="text-lg md:text-xl text-foreground/70 max-w-2xl leading-relaxed"
+              className="text-lg md:text-xl text-right text-foreground/70 max-w-2xl font-sans leading-relaxed"
             >
               {HERO.subheadline}
             </motion.p>
 
             <motion.div
               variants={itemVariants}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-16 pt-4"
             >
               <Link
                 href="/portfolio"
-                className="px-8 py-3.5 bg-accent text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group"
+                className="px-8 py-3.5 bg-secondary/90 text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group border-3 border-accent"
               >
                 {HERO.cta_primary}
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">
@@ -72,7 +72,7 @@ export default function Hero() {
                 href={WHATSAPP_CONFIG.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3.5 border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-lg transition-all duration-300 inline-flex items-center justify-center font-semibold"
+                className="px-8 py-3.5 border-3 bg-secondary/90 border-accent text-white hover:bg-primary hover:text-white rounded-lg transition-all duration-300 inline-flex items-center justify-center font-semibold"
               >
                 {HERO.cta_secondary}
               </a>

@@ -3,6 +3,7 @@
 import { ABOUT } from "@/lib/constants";
 import { motion } from "framer-motion";
 import Image from "next/image"; // Importe o componente Image do Next.js
+import Link from "next/link";
 
 export default function About() {
   const containerVariants = {
@@ -44,7 +45,7 @@ export default function About() {
             </motion.h2>
             <motion.div
               variants={itemVariants}
-              className="h-1 w-302 bg-accent rounded-full"
+              className="h-1 w-35 bg-accent rounded-full"
             ></motion.div>
           </div>
 
@@ -55,9 +56,9 @@ export default function About() {
               variants={itemVariants}
               className="lg:col-span-5 relative"
             >
-              <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20">
+              <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20 w-full max-w-[350px] md:max-w-none">
                 <Image
-                  src="/lulu.png" // Substitua pelo caminho da sua imagem
+                  src="/lulu.png"
                   alt="Sua Foto"
                   fill
                   className="object-cover grayscale transition-all duration-500"
@@ -72,7 +73,7 @@ export default function About() {
               variants={itemVariants}
               className="lg:col-span-7 space-y-6"
             >
-              <p className="text-lg text-background/85 leading-relaxed">
+              <p className="text-lg text-background/85 leading-relaxed text-justify">
                 {ABOUT.description}
               </p>
 
@@ -97,6 +98,17 @@ export default function About() {
                       </span>
                     </div>
                   ))}
+                </div>
+                <div className="items-center justify-center flex pt-14">
+                  <Link
+                    href="/portfolio"
+                    className="px-8 py-3.5 bg-secondary/90 text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group border-3 border-accent"
+                  >
+                    {ABOUT.cta_primary}
+                    <span className="ml-2 group-hover:translate-x-1 transition-transform">
+                      →
+                    </span>
+                  </Link>
                 </div>
               </div>
             </motion.div>

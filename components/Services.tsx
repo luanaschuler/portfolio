@@ -33,16 +33,16 @@ export default function Services() {
           }}
           transition={{
             ease: "linear",
-            duration: 80, // Velocidade: quanto maior, mais lento
+            duration: 30, // Velocidade: quanto maior, mais lento
             repeat: Infinity,
           }}
           // Pausa ao passar o mouse
-          whileHover={{ animationPlayState: "paused" }}
+          whileHover={{ animationPlayState: "pause" }}
         >
           {duplicatedServices.map((service, index) => (
             <div
               key={`${service.id}-${index}`}
-              className="w-[300px] md:w-[400px] shrink-0"
+              className="w-[240px] md:w-[400px] shrink-0"
             >
               <div
                 style={{
@@ -50,28 +50,22 @@ export default function Services() {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-                className="group relative p-4 rounded-2xl h-[450px] flex flex-col justify-end overflow-hidden border border-white/10 shadow-2xl"
+                className="group relative p-4 rounded-2xl h-[250px] flex flex-col justify-end overflow-hidden border border-white/10 shadow-2xl"
               >
                 {/* Overlay base */}
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
+                <div className="absolute inset-0 transition-colors duration-500" />
 
                 {/* Efeito Glass */}
-                <div className="relative z-10 p-6 rounded-xl bg-background/10 backdrop-blur-md border border-white/10 transition-all duration-500 group-hover:bg-black/50 group-hover:-translate-y-2">
-                  <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-500">
-                    {service.icon}
-                  </div>
+                <div className="relative z-10 p-4 rounded-xl bg-background/10 backdrop-blur-sm transition-all duration-200 group-hover:bg-black/10 group-hover:-translate-y-2">
+                  
 
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
+                  <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">
                     {service.title}
                   </h3>
 
                   <p className="text-foreground/60 text-sm leading-relaxed opacity-0 group-hover:opacity-100 h-0 group-hover:h-auto transition-all duration-500 overflow-hidden">
                     {service.description}
                   </p>
-
-                  <div className="mt-4 flex items-center text-accent text-xs font-bold tracking-widest uppercase">
-                    Saiba Mais <span className="ml-2">→</span>
-                  </div>
                 </div>
               </div>
             </div>

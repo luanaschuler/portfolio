@@ -27,8 +27,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="py-20 relative overflow-hidden">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-20 relative overflow-hidden bg-foreground">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-secondary/85 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"

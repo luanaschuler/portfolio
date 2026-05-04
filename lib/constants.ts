@@ -13,31 +13,34 @@ export const NAV_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Testimonials", href: "#testimonials" },
   { label: "Process", href: "#process" },
   { label: "FAQ", href: "#faq" },
 ];
 
 // Hero Section
 export const HERO = {
-  headline: "Web design que conecta e transforma.",
+  headline: "Do",
+  part1: "conceito",
+  part2: "ao",
+  part3: "código",
   subheadline:
-    "Criação de sites modernos, estratégicos e funcionais que impulsionam marcas e geram resultados reais.",
+    "Design estratégico e desenvolvimento frontend de alta performance, unidos para criar experiências digitais impecáveis e centradas no usuário.",
   cta_primary: "Acesse o PORTFOLIO",
   cta_secondary: "Entre em contato",
 };
 
 // About Section
 export const ABOUT = {
-  title: "About Me",
+  title: "Sobre Mim",
   description:
-    "I'm a product designer and developer with a passion for creating beautiful, functional digital experiences. With 8+ years of experience, I've helped brands elevate their digital presence through thoughtful design and robust development.",
+    "Sou uma designer e desenvolvedora de produtos com paixão por criar experiências digitais belas e funcionais. Com mais de 8 anos de experiência, ajudei marcas a elevar sua presença digital por meio de um design pensado e um desenvolvimento robusto.",
   highlights: [
     "50+ Projects Completed",
     "20+ Global Clients",
     "8+ Years Experience",
     "Award-Winning Work",
   ],
+  cta_primary: "Acesse o PORTFOLIO"
 };
 
 // Services Section
@@ -48,42 +51,42 @@ export const SERVICES = [
     description:
       "End-to-end design solutions from concept to pixel-perfect mockups",
     icon: "🎨",
-    image: "/fios.png",
+    image: "/cute.png",
   },
   {
     id: 2,
     title: "Web Development",
     description: "Modern, responsive websites built with latest technologies",
     icon: "💻",
-    image: "/folha.png",
+    image: "/folhaa.png",
   },
   {
     id: 3,
     title: "UI/UX Design",
     description: "User-centered design that drives engagement and conversions",
     icon: "✨",
-    image: "/geom.png",
+    image: "/mountainss.png",
   },
   {
     id: 4,
     title: "Brand Identity",
     description: "Complete branding packages tailored to your vision",
     icon: "🎯",
-    image: "/folha.png",
+    image: "/rocks.png",
   },
   {
     id: 5,
     title: "Mobile Apps",
     description: "Native and cross-platform app design and development",
     icon: "📱",
-    image: "/mountain.png",
+    image: "/round.png",
   },
   {
     id: 6,
     title: "Consulting",
     description: "Strategic digital transformation and growth consulting",
     icon: "💡",
-    image: "/muitosfios.png",
+    image: "/fios.png",
   },
 ];
 
