@@ -15,7 +15,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-white py-16 relative overflow-hidden">
+    <footer className="bg-primary text-white py-16 relative overflow-hidden z-100">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-1/4 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-1/3 w-60 h-60 bg-accent/10 rounded-full blur-3xl"></div>

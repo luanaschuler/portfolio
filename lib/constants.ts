@@ -10,10 +10,10 @@ export const SITE_KEYWORDS =
 // Navigation
 export const NAV_ITEMS = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Sobre Mim", href: "#about" },
+  { label: "Serviços", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Process", href: "#process" },
+  { label: "Processo", href: "#process" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -33,13 +33,8 @@ export const HERO = {
 export const ABOUT = {
   title: "Sobre Mim",
   description:
-    "Sou uma designer e desenvolvedora de produtos com paixão por criar experiências digitais belas e funcionais. Com mais de 8 anos de experiência, ajudei marcas a elevar sua presença digital por meio de um design pensado e um desenvolvimento robusto.",
-  highlights: [
-    "50+ Projects Completed",
-    "20+ Global Clients",
-    "8+ Years Experience",
-    "Award-Winning Work",
-  ],
+    "Sou web developer com paixão por criar experiências digitais belas e funcionais. Com mais de 6 anos de experiência na tecnologia, ajudei pessoas a elevar sua presença digital por meio de um design pensado e um desenvolvimento robusto. Minha abordagem é centrada no usuário, garantindo que cada projeto não apenas pareça incrível, mas também ofereça uma experiência intuitiva e envolvente.",
+  
   cta_primary: "Acesse o PORTFOLIO"
 };
 
@@ -166,30 +161,30 @@ export const TESTIMONIALS = [
 export const PROCESS = [
   {
     id: 1,
-    title: "Discovery & Strategy",
+    title: "Descoberta & Estratégia",
     description:
-      "Understanding your vision, goals, and target audience through in-depth consultation",
+      "Entendimento da sua visão, metas e público-alvo por meio de consultoria aprofundada",
     icon: "🔍",
   },
   {
     id: 2,
-    title: "Design & Prototyping",
+    title: "Design & Prototipagem",
     description:
-      "Creating detailed wireframes, mockups, and interactive prototypes",
+      "Criando wireframes detalhados, mockups e protótipos interativos",
     icon: "✏️",
   },
   {
     id: 3,
-    title: "Development & Testing",
+    title: "Desenvolvimento & QA",
     description:
-      "Building production-ready code and rigorous quality assurance",
+      "Desenvolvendo código pronto para produção e garantindo qualidade rigorosa",
     icon: "⚙️",
   },
   {
     id: 4,
-    title: "Launch & Support",
+    title: "Lançamento e Suporte",
     description:
-      "Deployment, optimization, and ongoing support for your success",
+      "Deploy, optimização, and suporte com manutençao para o seu sucesso",
     icon: "🚀",
   },
 ];
@@ -220,12 +215,7 @@ export const FAQ = [
     answer:
       "Absolutely! I can integrate with existing design systems and development workflows to ensure consistency and efficiency.",
   },
-  {
-    id: 5,
-    question: "What technologies do you specialize in?",
-    answer:
-      "I specialize in modern web technologies including React, Next.js, TypeScript, TailwindCSS, and various backend solutions. I'm always learning new tools.",
-  },
+  
   {
     id: 6,
     question: "How do you handle revisions?",

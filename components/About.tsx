@@ -58,7 +58,7 @@ export default function About() {
             >
               <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20 w-full max-w-[350px] md:max-w-none">
                 <Image
-                  src="/lulu.png"
+                  src="/LULU-TOKYO-PB.jpg" // Substitua pelo caminho da sua foto
                   alt="Sua Foto"
                   fill
                   className="object-cover grayscale transition-all duration-500"
@@ -83,8 +83,8 @@ export default function About() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Product Design",
                     "Web Development",
+                    "Product Design",
                     "Mobile Development",
                     "UI/UX Design",
                   ].map((skill, idx) => (

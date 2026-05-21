@@ -25,7 +25,7 @@ export default function Process() {
 
   return (
     <section id="process" className="py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-primary/85 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-secondary/10 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -39,7 +39,7 @@ export default function Process() {
               variants={itemVariants}
               className="text-4xl md:text-5xl font-bold text-foreground"
             >
-              My Process
+              Como funciona o processo?
             </motion.h2>
             <motion.div
               variants={itemVariants}
@@ -49,7 +49,7 @@ export default function Process() {
               variants={itemVariants}
               className="text-lg text-foreground/60"
             >
-              A structured approach to delivering exceptional results
+              Uma abordagem estruturada para entregar resultados excepcionais
             </motion.p>
           </div>
 
@@ -72,7 +72,7 @@ export default function Process() {
                   </div>
 
                   {/* Icon */}
-                  <div className="text-4xl pt-2">{step.icon}</div>
+                  {/* <div className="text-4xl pt-2">{step.icon}</div> */}
 
                   {/* Content */}
                   <h3 className="text-lg font-semibold text-foreground pt-4">

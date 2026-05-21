@@ -19,6 +19,8 @@ export default function Home() {
         backgroundPosition: "center top",
         backgroundAttachment: "fixed", // Isso cria um efeito de profundidade elegante ao rolar
       }}
+    
+    
     >
       <Hero />
       <About />

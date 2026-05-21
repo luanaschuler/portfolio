@@ -28,7 +28,7 @@ export default function FAQSection() {
 
   return (
     <section id="faq" className="py-20 relative overflow-hidden bg-foreground">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-secondary/85 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-foreground/85 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -40,9 +40,8 @@ export default function FAQSection() {
           <div className="text-center space-y-4">
             <motion.h2
               variants={itemVariants}
-              className="text-4xl md:text-5xl font-bold text-foreground"
-            >
-              Frequently Asked Questions
+              className="text-4xl md:text-5xl font-bold text-background">
+              Dúvidas Frequentes
             </motion.h2>
             <motion.div
               variants={itemVariants}
@@ -62,7 +61,7 @@ export default function FAQSection() {
                   onClick={() => setOpenId(openId === item.id ? null : item.id)}
                   className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/10 transition-colors group"
                 >
-                  <span className="text-left font-semibold text-foreground group-hover:text-accent transition-colors">
+                  <span className="text-left font-semibold text-background group-hover:text-accent transition-colors">
                     {item.question}
                   </span>
                   <motion.span
