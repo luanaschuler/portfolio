@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-
 export default function Footer() {
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
