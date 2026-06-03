@@ -95,7 +95,7 @@ export const PORTFOLIO = {
       title: "Website para Psicologa",
       description:
         "Redesign completo de uma plataforma de uma profissional de psicologia",
-      image: "/iniciais-bg.png",
+      // image: "/barbara.png",
       category: "Saúde e Bem-estar",
       link: "https://barbaracardosopsicologa.com",
     },

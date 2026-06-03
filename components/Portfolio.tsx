@@ -5,12 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-const placeholderImages = [
-  "/folha.png",
-  "/folha.png",
-  "/folha.png",
-  "/folha.png",
-];
+const placeholderImages = ["/barbara.png", "/thiago.png", "/sonho.png"];
 
 function shuffleArray<T>(array: T[]) {
   const cloned = [...array];
@@ -23,7 +18,7 @@ function shuffleArray<T>(array: T[]) {
 
 export default function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [sliderImages] = useState(() => shuffleArray(placeholderImages));
+  const sliderImages = placeholderImages;
 
   const containerVariants = {
     hidden: { opacity: 0 },
