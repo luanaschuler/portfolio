@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen pt-24 pb-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 flex items-center"
+      className="min-h-screen/2 pt-24 pb-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 flex items-center"
     >
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -60,7 +60,7 @@ export default function Hero() {
             >
               <Link
                 href="/portfolio"
-                className="px-8 py-3.5 bg-secondary/90 text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group border-3 border-accent"
+                className="px-8 py-3.5 bg-secondary/90 text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group border-1 border-accent"
               >
                 {HERO.cta_primary}
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">
@@ -72,7 +72,7 @@ export default function Hero() {
                 href={WHATSAPP_CONFIG.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3.5 border-3 bg-secondary/90 border-accent text-white hover:bg-primary hover:text-white rounded-lg transition-all duration-300 inline-flex items-center justify-center font-semibold"
+                className="px-8 py-3.5 border-1 bg-secondary/90 border-accent text-white hover:bg-primary hover:text-white rounded-lg transition-all duration-300 inline-flex items-center justify-center font-semibold"
               >
                 {HERO.cta_secondary}
               </a>
@@ -82,12 +82,12 @@ export default function Hero() {
           {/* Image Placeholder - Reserved Space */}
           <motion.div
             variants={itemVariants}
-            className="relative h-96 lg:h-full min-h-[500px] rounded-2xl overflow-hidden glass group pt-20"
+            className="relative h-96 lg:h-full min-h-125 rounded-2xl overflow-hidden glass group"
           >
             <div
-              className="w-full h-full flex items-center justify-center bg-cover bg-center rounded-2xl transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full flex items-center justify-center bg-cover bg-center rounded-2xl transition-transform duration-500 group-hover:scale-100"
               style={{
-                backgroundImage: `url('/iniciais-bg.png')`,
+                backgroundImage: `url('/mainbg.png')`,
               }}
             >
               <div className="absolute inset-0 bg-black/20"></div>

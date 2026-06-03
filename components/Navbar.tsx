@@ -2,6 +2,7 @@
 
 import { NAV_ITEMS, WHATSAPP_CONFIG } from "@/lib/constants";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -19,13 +20,19 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">LS</span>
+            <Link
+              href="/"
+              className="flex flex-shrink-0 w-1/5 items-center group"
+            >
+              <div className="relative w-full max-w-[250px] rounded-lg overflow-hidden">
+                <Image
+                  src="/logoazul.png"
+                  alt="Logo Azul"
+                  width={300}
+                  height={300}
+                  className="object-contain transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
-              <span className="hidden sm:inline font-semibold text-accent">
-                Luana Schüler - Web Developer
-              </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -88,7 +95,7 @@ export default function Navbar() {
               exit={{ opacity: 0, y: -10 }}
               className="lg:hidden mt-4 pt-4 border-t border-border"
             >
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 to-background p-4 rounded-lg">
                 {NAV_ITEMS.map((item) => {
                   const href = item.href.startsWith("#")
                     ? `/#${item.href.slice(1)}`
@@ -97,7 +104,7 @@ export default function Navbar() {
                     <Link
                       key={item.label}
                       href={href}
-                      className="text-foreground hover:text-accent transition-colors text-sm font-medium py-2"
+                      className="hover:text-secondary transition-colors text-sm font-medium py-2 text-center uppercase bg-secondary/30 rounded-lg text-primary hover:bg-secondary/50"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.label}
@@ -108,7 +115,7 @@ export default function Navbar() {
                   href={WHATSAPP_CONFIG.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors text-sm font-medium text-center"
+                  className="mt-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors text-sm font-medium text-center uppercase"
                 >
                   WhatsApp
                 </a>

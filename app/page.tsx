@@ -2,9 +2,9 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       className="w-full min-h-screen"
       style={{
         // O gradiente ajuda a integrar a imagem com sua paleta de cores (Navy, Deep Purple e Gold)
-        backgroundImage: `url('/mainbg.png')`,
+        backgroundImage: `url('/bg.png')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center top",
@@ -24,10 +24,10 @@ export default function Home() {
     >
       <Hero />
       <About />
+      <Portfolio /> 
       <Services />
       <Process />
       <FAQ />
-      <CTA />
       <Contact />
     </div>
   );

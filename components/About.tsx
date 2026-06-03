@@ -27,7 +27,7 @@ export default function About() {
 
   return (
     <section id="about" className="py-20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-primary/85 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12 w-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-primary/30 backdrop-blur-md border-2 border-accent/30 rounded-2xl p-8 md:p-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -54,14 +54,15 @@ export default function About() {
             {/* Photo Column (Left) */}
             <motion.div
               variants={itemVariants}
-              className="lg:col-span-5 relative"
+              className="col-span-1 lg:col-span-5 relative"
             >
-              <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20 w-full max-w-[350px] md:max-w-none">
+              <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20 w-full max-w-[360px] sm:max-w-full mx-auto">
                 <Image
                   src="/LULU-TOKYO-PB.jpg" // Substitua pelo caminho da sua foto
                   alt="Sua Foto"
-                  fill
-                  className="object-cover grayscale transition-all duration-500"
+                  width={800}
+                  height={800}
+                  className="object-cover grayscale transition-all duration-500 w-full h-auto"
                 />
               </div>
               {/* Elemento decorativo atrás da foto */}
@@ -71,7 +72,7 @@ export default function About() {
             {/* Content Column (Right) */}
             <motion.div
               variants={itemVariants}
-              className="lg:col-span-7 space-y-6"
+              className="col-span-1 lg:col-span-7 space-y-6"
             >
               <p className="text-lg text-background/85 leading-relaxed text-justify">
                 {ABOUT.description}
@@ -102,7 +103,7 @@ export default function About() {
                 <div className="items-center justify-center flex pt-14">
                   <Link
                     href="/portfolio"
-                    className="px-8 py-3.5 bg-secondary/90 text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group border-3 border-accent"
+                    className="px-8 py-3.5 bg-secondary/90 text-white rounded-lg hover:bg-primary-hover transition-all duration-300 inline-flex items-center justify-center font-semibold group border-1 border-accent"
                   >
                     {ABOUT.cta_primary}
                     <span className="ml-2 group-hover:translate-x-1 transition-transform">
@@ -117,8 +118,8 @@ export default function About() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-1/2 -left-20 w-40 h-40 bg-accent/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 -right-20 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+      <div className="hidden md:block absolute top-1/2 -left-20 w-40 h-40 bg-accent/5 rounded-full blur-3xl"></div>
+      <div className="hidden md:block absolute bottom-0 -right-20 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
     </section>
   );
 }

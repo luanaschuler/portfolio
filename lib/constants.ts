@@ -87,8 +87,8 @@ export const SERVICES = [
 
 // Portfolio Section
 export const PORTFOLIO = {
-  title: "Featured Work",
-  description: "A selection of projects that showcase my expertise and passion",
+  title: "Portfolio",
+  description: "Alguns cases recentes mostrando meus trabalhos e resultados",
   projects: [
     {
       id: 1,
