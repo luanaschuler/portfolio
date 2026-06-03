@@ -75,11 +75,11 @@ export default function Contact() {
                 WhatsApp
               </h3>
               <p className="text-foreground/60 text-sm">
-                Chat with me directly on WhatsApp
+                Converse comigo diretamente para discutir seu projeto e obter uma resposta rápida
               </p>
               <div className="pt-4">
                 <span className="inline-flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all">
-                  Open Chat
+                  Abrir WhatsApp
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>
@@ -99,7 +99,7 @@ export default function Contact() {
                 Email
               </h3>
               <p className="text-foreground/60 text-sm">
-                Send me an email with your project details
+                Envie-me um email com os detalhes do seu projeto
               </p>
               <div className="pt-4 break-all">
                 <span className="inline-flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all text-xs sm:text-sm">
@@ -107,22 +107,6 @@ export default function Contact() {
                 </span>
               </div>
             </motion.a>
-          </motion.div>
-
-          {/* Phone */}
-          <motion.div
-            variants={itemVariants}
-            className="text-center space-y-3 pt-6 border-t border-border"
-          >
-            <p className="text-sm text-foreground/50 uppercase tracking-wide font-semibold">
-              Or Call
-            </p>
-            <a
-              href={`tel:${CONTACT.phone}`}
-              className="text-3xl font-bold text-primary hover:text-primary-hover transition-colors"
-            >
-              {CONTACT.phone}
-            </a>
           </motion.div>
         </motion.div>
       </div>

@@ -3,6 +3,8 @@
 import { FOOTER, WHATSAPP_CONFIG } from "@/lib/constants";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 
 export default function Footer() {
   const itemVariants = {
@@ -33,15 +35,24 @@ export default function Footer() {
             variants={itemVariants}
             className="md:col-span-2 space-y-4"
           >
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-accent to-primary-hover rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">LP</span>
+            <Link
+              href="/"
+              className="flex flex-shrink-0 w-1/5 items-center group"
+            >
+              <div className="relative w-full max-w-[250px] rounded-lg overflow-hidden">
+                <Image
+                  src="/logoazul.png"
+                  alt="Logo Azul"
+                  width={300}
+                  height={300}
+                  className="object-contain transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
-              <span className="font-semibold text-white">Luana</span>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
-              Creating premium digital experiences for brands that dare to be
-              different.
+              Criando experiências digitais elegantes e eficazes para
+              impulsionar seu negócio. Entre em contato para transformar suas
+              ideias em realidade!
             </p>
             <div className="flex gap-3 pt-2">
               {FOOTER.social.map((social) => (
@@ -59,8 +70,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <motion.div variants={itemVariants} className="space-y-4">
-            <h4 className="font-semibold text-white">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-white">Links</h4>
+            <ul className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2">
               <li>
                 <a
                   href="#home"
@@ -97,7 +108,7 @@ export default function Footer() {
           </motion.div>
 
           {/* Resources */}
-          <motion.div variants={itemVariants} className="space-y-4">
+          {/* <motion.div variants={itemVariants} className="space-y-4">
             <h4 className="font-semibold text-white">Resources</h4>
             <ul className="space-y-2">
               {FOOTER.links.map((link) => (
@@ -121,7 +132,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* Divider */}

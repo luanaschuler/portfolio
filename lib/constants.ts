@@ -256,9 +256,9 @@ export const FOOTER = {
     { label: "Sitemap", href: "#" },
   ],
   social: [
-    { label: "LinkedIn", href: "#", icon: "👔" },
-    { label: "Instagram", href: "#", icon: "📸" },
-    { label: "GitHub", href: "#", icon: "💻" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/luanaschuler/", icon: "👔" },
+    { label: "Instagram", href: "https://www.instagram.com/luanaschuler/", icon: "📸" },
+    { label: "GitHub", href: "https://github.com/luanaschuler", icon: "💻" },
   ],
 };
 
