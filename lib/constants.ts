@@ -94,7 +94,7 @@ export const PORTFOLIO = {
       id: 1,
       title: "Website para Psicologa",
       description:
-        "Redesign completo de uma plataforma de serviços de saúde, resultando em aumento de 45% nas taxas de conversão",
+        "Redesign completo de uma plataforma de uma profissional de psicologia",
       image: "/iniciais-bg.png",
       category: "Saúde e Bem-estar",
       link: "#",
