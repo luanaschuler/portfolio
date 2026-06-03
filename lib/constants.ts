@@ -193,34 +193,40 @@ export const PROCESS = [
 export const FAQ = [
   {
     id: 1,
-    question: "What is your typical project timeline?",
+    question: "Qual a timeline de um projeto? ",
     answer:
-      "Project timelines vary depending on scope and complexity. Most projects range from 4-12 weeks. During our initial consultation, I'll provide a detailed timeline for your specific needs.",
+      "Vão variar dependendo do escopo e complexidade. A maioria dos projetos varia de 4-12 semanas. Durante nossa consulta inicial, eu fornecerei uma linha do tempo detalhada para suas necessidades específicas.",
   },
   {
     id: 2,
-    question: "Do you offer ongoing support after launch?",
+    question: "Você oferece suporte contínuo após o lançamento?",
     answer:
-      "Yes! I offer comprehensive post-launch support packages including maintenance, updates, and optimization. We can discuss options that fit your budget.",
+      "Sim! Ofereço pacotes de suporte pós-lançamento abrangentes, incluindo manutenção, atualizações e otimização. Podemos discutir opções que sejam adequadas ao seu orçamento.",
   },
   {
     id: 3,
-    question: "What is your design process?",
+    question: "Qual é o seu processo de design?",
     answer:
-      "My process includes discovery, strategy, design, prototyping, development, testing, and launch. I emphasize collaboration and feedback throughout each phase.",
+      "Meu processo inclui descoberta, estratégia, design, prototipagem, desenvolvimento, testes e lançamento. Eu enfatizo colaboração e feedback ao longo de cada fase.",
   },
   {
     id: 4,
-    question: "Can you work with my existing design system?",
+    question: "Você pode trabalhar com meu sistema de design existente?",
     answer:
-      "Absolutely! I can integrate with existing design systems and development workflows to ensure consistency and efficiency.",
+      "Absolutamente! Posso integrar com sistemas de design existentes e fluxos de trabalho de desenvolvimento para garantir consistência e eficiência.",
   },
-  
+  {
+    id: 5,
+    question: "Quais são os valores?",
+    answer:
+      "Os valores vão depender da complexidade do projeto, mas geralmente começam em R$2,000 para projetos básicos. Durante nossa consulta inicial, posso fornecer uma cotação personalizada com base nas suas necessidades específicas.",
+  },
+
   {
     id: 6,
-    question: "How do you handle revisions?",
+    question: "Como você trabalha com revisões?",
     answer:
-      "All project packages include a set number of revision rounds. Additional revisions can be added based on your needs.",
+      "Todos os pacotes incluem um número definido de rodadas de revisão. Revisões adicionais podem ser adicionadas com base nas suas necessidades.",
   },
 ];
 
