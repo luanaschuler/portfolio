@@ -105,6 +105,8 @@ export default function Portfolio() {
                 </p>
                 <a
                   href={activeProject.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-2 text-white font-semibold border-b border-white/40 pb-1 hover:border-white transition-colors"
                 >
                   ANALISAR CASE

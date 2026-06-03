@@ -44,45 +44,45 @@ export const SERVICES = [
     id: 1,
     title: "Product Design",
     description:
-      "End-to-end design solutions from concept to pixel-perfect mockups",
+      "Soluções End-to-end design do conceito a mockups pixel-perfect",
     icon: "🎨",
     image: "/cute.png",
   },
   {
     id: 2,
     title: "Web Development",
-    description: "Modern, responsive websites built with latest technologies",
+    description: "Websites modernos e responsivos construídos com as últimas tecnologias",
     icon: "💻",
     image: "/folhaa.png",
   },
   {
     id: 3,
     title: "UI/UX Design",
-    description: "User-centered design that drives engagement and conversions",
+    description: "Design centrado no usuário que impulsiona o engajamento e as conversões",
     icon: "✨",
     image: "/mountainss.png",
   },
   {
     id: 4,
-    title: "Brand Identity",
-    description: "Complete branding packages tailored to your vision",
+    title: "Identidade Visual",
+    description: "Pacotes de branding completos adaptados à sua visão",
     icon: "🎯",
     image: "/rocks.png",
   },
   {
     id: 5,
     title: "Mobile Apps",
-    description: "Native and cross-platform app design and development",
+    description: "Design e desenvolvimento de aplicativos nativos e cross-platform",
     icon: "📱",
     image: "/round.png",
   },
-  {
-    id: 6,
-    title: "Consulting",
-    description: "Strategic digital transformation and growth consulting",
-    icon: "💡",
-    image: "/fios.png",
-  },
+  // {
+  //   id: 6,
+  //   title: "Consultoria Digital",
+  //   description: "Consultoria de transformação digital e crescimento estratégico",
+  //   icon: "💡",
+  //   image: "/fios.png",
+  // },
 ];
 
 // Portfolio Section
@@ -97,7 +97,7 @@ export const PORTFOLIO = {
         "Redesign completo de uma plataforma de uma profissional de psicologia",
       image: "/iniciais-bg.png",
       category: "Saúde e Bem-estar",
-      link: "#",
+      link: "https://barbaracardosopsicologa.com",
     },
     {
       id: 2,
@@ -106,26 +106,26 @@ export const PORTFOLIO = {
         "Redesign completo de uma plataforma de serviços de saúde, resultando em aumento de 45% nas taxas de conversão",
       image: "/folha.png",
       category: "Saúde e Bem-estar",
-      link: "#",
+      link: "#https://thiagowanderweger.com.br",
     },
     {
       id: 3,
-      title: "Portfólio para Midia Social",
+      title: "Portfólio para Instituto de Caridade",
       description:
-        "Site focado na estética e no visual dos trabalhos realizados da social midia, com o objetivo de atrair clientes e mostrar os trabalhos realizados",
+        "Site focado na história e impacto de uma organização sem fins lucrativos",
       image: "/folha.png",
       category: "Creative Portfolio",
-      link: "#",
+      link: "https://sonhoemviver.org.br",
     },
-    {
-      id: 4,
-      title: "Mobile Health App",
-      description:
-        "Created an intuitive mobile health application used by 100k+ users",
-      image: "/iniciais-bg.png",
-      category: "Mobile",
-      link: "#",
-    },
+    // {
+    //   id: 4,
+    //   title: "Mobile Health App",
+    //   description:
+    //     "Created an intuitive mobile health application used by 100k+ users",
+    //   image: "/iniciais-bg.png",
+    //   category: "Mobile",
+    //   link: "#",
+    // },
   ],
 };
 
