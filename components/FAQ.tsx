@@ -27,8 +27,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="py-20 relative overflow-hidden bg-foreground">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-foreground/85 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
+    <section id="faq" className="py-20 relative overflow-hidden">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-foreground/80 backdrop-blur-md border-2 border-accent/100 rounded-2xl p-8 md:p-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -82,7 +82,7 @@ export default function FAQSection() {
                       transition={{ duration: 0.3 }}
                       className="border-t border-foreground/10"
                     >
-                      <p className="px-6 py-4 text-foreground/70 leading-relaxed">
+                      <p className="px-6 py-4 text-background/70 leading-relaxed">
                         {item.answer}
                       </p>
                     </motion.div>

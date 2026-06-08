@@ -33,25 +33,41 @@
   --color-muted: var(--color-muted);
   --color-border: var(--color-border);
 
-  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
-  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Fonts */
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 
-  --radius-s: 4px;    /* Sutil: botões pequenos, inputs */
-  --radius-m: 12px;   /* Padrão: cards, modais internos */
-  --radius-lg: 24px;  /* Amplo: seções, containers grandes */
+  --radius-s: 4px; /* Sutil: botões pequenos, inputs */
+  --radius-m: 12px; /* Padrão: cards, modais internos */
+  --radius-lg: 24px; /* Amplo: seções, containers grandes */
 
   /* Border Width (Espessura da Borda) */
-  --border-width-s: 1px;  /* Delicada: divisores, cards luxo */
-  --border-width-m: 2px;  /* Definida: foco, botões primários */
+  --border-width-s: 1px; /* Delicada: divisores, cards luxo */
+  --border-width-m: 2px; /* Definida: foco, botões primários */
   --border-width-lg: 4px; /* Ênfase: destaque de elementos */
+}
+
+html {
+  font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   @apply bg-background text-foreground font-sans;
+  font-family: inherit;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+}
+
+body,
+body * {
+  font-family:
+    var(--font-montserrat), ui-sans-serif, system-ui, sans-serif !important;
 }
 
 /* Glassmorphism utilities */

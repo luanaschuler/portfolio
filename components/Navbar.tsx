@@ -24,12 +24,12 @@ export default function Navbar() {
               href="/"
               className="flex flex-shrink-0 w-1/5 items-center group"
             >
-              <div className="relative w-full max-w-[250px] rounded-lg overflow-hidden">
+              <div className="relative w-full max-w-[250px] overflow-hidden">
                 <Image
-                  src="/logoazul.png"
+                  src="/schulerlab_cropped.png"
                   alt="Logo Azul"
-                  width={300}
-                  height={300}
+                  width={200}
+                  height={50}
                   className="object-contain transition-transform duration-300 group-hover:scale-110"
                 />
               </div>

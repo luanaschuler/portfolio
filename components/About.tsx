@@ -56,13 +56,13 @@ export default function About() {
               variants={itemVariants}
               className="col-span-1 lg:col-span-5 relative"
             >
-              <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20 w-full max-w-[360px] sm:max-w-full mx-auto">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border-2 border-accent/20 w-full max-w-[360px] sm:max-w-full mx-auto">
                 <Image
                   src="/LULU-TOKYO-PB.jpg" // Substitua pelo caminho da sua foto
                   alt="Sua Foto"
                   width={800}
                   height={800}
-                  className="object-cover grayscale transition-all duration-500 w-full h-auto"
+                  className="object-contain grayscale transition-all duration-500 w-full h-full"
                 />
               </div>
               {/* Elemento decorativo atrás da foto */}

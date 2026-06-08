@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 relative overflow-hidden"
+      className="py-20 bg-primary/60 backdrop-blur-md border border-white/20 p-8 relative overflow-hidden"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -40,7 +40,7 @@ export default function Contact() {
           <div className="text-center space-y-4">
             <motion.h2
               variants={itemVariants}
-              className="text-4xl md:text-5xl font-bold text-foreground"
+              className="text-4xl md:text-5xl font-bold text-accent italic"
             >
               {CONTACT.title}
             </motion.h2>
@@ -50,7 +50,7 @@ export default function Contact() {
             ></motion.div>
             <motion.p
               variants={itemVariants}
-              className="text-lg text-foreground/60"
+              className="text-lg text-background/60"
             >
               {CONTACT.description}
             </motion.p>
@@ -74,7 +74,7 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold text-foreground group-hover:text-accent transition-colors">
                 WhatsApp
               </h3>
-              <p className="text-foreground/60 text-sm">
+              <p className="text-background/60 text-sm">
                 Converse comigo diretamente para discutir seu projeto e obter uma resposta rápida
               </p>
               <div className="pt-4">
@@ -98,7 +98,7 @@ export default function Contact() {
               <h3 className="text-2xl font-semibold text-foreground group-hover:text-accent transition-colors">
                 Email
               </h3>
-              <p className="text-foreground/60 text-sm">
+              <p className="text-background/60 text-sm">
                 Envie-me um email com os detalhes do seu projeto
               </p>
               <div className="pt-4 break-all">

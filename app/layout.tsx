@@ -1,26 +1,12 @@
 import type { Metadata } from "next";
-import {
-  Playfair_Display,
-  Plus_Jakarta_Sans,
-  JetBrains_Mono,
-} from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_KEYWORDS } from "@/lib/constants";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
-  subsets: ["latin"],
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"],
-});
-
-const jetBrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -59,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfairDisplay.variable} ${plusJakartaSans.variable} ${jetBrainsMono.variable} h-full antialiased scroll-smooth`}
+      className={`${montserrat.variable} ${montserrat.className} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Navbar />

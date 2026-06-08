@@ -64,10 +64,10 @@ export default function Portfolio() {
           className="space-y-16"
         >
           {/* Section Header (Mantido Original) */}
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
+          <div className="text-center space-y-4 max-w-3xl mx-auto ">
             <motion.h2
               variants={itemVariants}
-              className="text-5xl md:text-6xl font-bold text-white"
+              className="text-5xl md:text-6xl font-bold text-white font-sans"
             >
               {PORTFOLIO.title}
             </motion.h2>
@@ -114,12 +114,13 @@ export default function Portfolio() {
                 className="lg:w-1/2 min-h-[340px] rounded-[40px] overflow-hidden border border-white/10 bg-white/5 shadow-2xl shadow-black/20 backdrop-blur-2xl relative"
               >
                 <div className="absolute inset-0 bg-black/20" />
-                <div className="relative z-10 h-full w-full overflow-hidden">
+                <div className="relative z-10 w-full h-[320px] sm:h-[380px] lg:h-full overflow-hidden">
                   <Image
                     src={sliderImages[activeIndex % sliderImages.length]}
                     alt="Portfolio placeholder"
                     fill
-                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain"
                   />
                 </div>
               </motion.div>

@@ -92,29 +92,29 @@ export const PORTFOLIO = {
   projects: [
     {
       id: 1,
-      title: "Website para Psicologa",
+      title: "Website para Psicóloga",
       description:
-        "Redesign completo de uma plataforma de uma profissional de psicologia",
+        "Redesign completo de uma plataforma de uma profissional de psicologia, focando em apresentar seus serviços e facilitar o contato com pacientes",
       // image: "/barbara.png",
       category: "Saúde e Bem-estar",
       link: "https://barbaracardosopsicologa.com",
     },
     {
       id: 2,
-      title: "Website para Psicologo",
+      title: "Website para Psicólogo",
       description:
-        "Redesign completo de uma plataforma de serviços de saúde, resultando em aumento de 45% nas taxas de conversão",
+        "Desenvolvimento de um site moderno e responsivo para um psicólogo, focado em apresentar seus serviços e facilitar o contato com pacientes. Em desenvolvimento.",
       image: "/folha.png",
       category: "Saúde e Bem-estar",
-      link: "#https://thiagowanderweger.com.br",
+      link: "https://thiago-psicologo.vercel.app/",
     },
     {
       id: 3,
-      title: "Portfólio para Instituto de Caridade",
+      title: "Website para Instituto de Caridade",
       description:
         "Site focado na história e impacto de uma organização sem fins lucrativos",
       image: "/folha.png",
-      category: "Creative Portfolio",
+      category: "Fins Filantrópicos",
       link: "https://sonhoemviver.org.br",
     },
     // {
